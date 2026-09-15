@@ -1,0 +1,34 @@
+configuration:
+  OLLAMA_API_KEY:
+    name: OLLAMA_API_KEY
+    description: API-sleutel vir verifikasie by Ollama Cloud (ollama.com) om wolk-gehuisveste modelle te gebruik. Skep 'n sleutel by https://ollama.com/settings/keys.
+  OLLAMA_MODELS:
+    name: OLLAMA_MODELS
+    description: Gids waar die afgelaaide modelle gestoor word, verseker genoeg spasie
+  OLLAMA_KEEP_ALIVE:
+    name: OLLAMA_KEEP_ALIVE
+    description: Hou die model in geheue gelaai, stel op -1 om dit permanent gelaai te hou
+  OLLAMA_KV_CACHE_TYPE:
+    name: OLLAMA_KV_CACHE_TYPE
+    description: Die tipe kas om te gebruik, q8_0 word vir die meeste gebruikers aanbeveel. Slegs wanneer FLASH_ATTENTION geaktiveer is
+  OLLAMA_FLASH_ATTENTION:
+    name: OLLAMA_FLASH_ATTENTION
+    description: Aktiveer flash attention vir vinniger inferensie (slegs op GPU)
+  OLLAMA_MAX_LOADED_MODELS:
+    name: OLLAMA_MAX_LOADED_MODELS
+    description: Die maksimum aantal modelle om gelyktydig in geheue gelaai te hou
+  OLLAMA_NUM_PARALLEL:
+    name: OLLAMA_NUM_PARALLEL
+    description: Die aantal gelyktydige versoeke om te hanteer
+  OLLAMA_ORIGINS:
+    name: OLLAMA_ORIGINS
+    description: Die toegelate oorspronge vir die API, stel op "*" om almal toe te laat. Maak leeg om na die verstek liggings terug te keer
+  OLLAMA_VULKAN:
+    name: OLLAMA_VULKAN
+    description: Bykomende GPU-ondersteuning. Lees [die dokumentasie](https://docs.ollama.com/gpu#vulkan-gpu-support) vir meer inligting.
+  OLLAMA_IGPU_ENABLE:
+    name: OLLAMA_IGPU_ENABLE
+    description: Aktiveer gebruik van geïntegreerde GPU's (bv. Intel Iris Xe). Vereis dat OLLAMA_VULKAN geaktiveer is. Standaard gedeaktiveer om huidige gedrag te behou.
+  HOME:
+    name: HOME
+    description: Tuisgids vir die Ollama-proses. Stel op /share (verstek) sodat Ollama Cloud-geloofsbriewe (gestoor in ~/.ollama) behoue bly oor byvoeging-herbegin heen.
